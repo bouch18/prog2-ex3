@@ -33,8 +33,8 @@ public class ExMain {
             System.exit(1); //終了ステータス。ここでは取り敢えず0(=正常)以外にした。
         }
 
-        String first_place = strings.get(1);
-        System.out.println(first_place);
+        //String first_place = strings.get(1);
+        //System.out.println(first_place);
         //map.txtを読み込んだ迷路インスタンスを生成。
         /*String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
         List<String> strings = new ArrayList<>();
