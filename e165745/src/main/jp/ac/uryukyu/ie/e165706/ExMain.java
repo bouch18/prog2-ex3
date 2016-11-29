@@ -21,7 +21,7 @@ public class ExMain {
             catch(想定してる例外){例外処理}
             finally{例外の有無にかかわらず、最終的に実行させたい処理}
          */
-        try {
+       /* try {
             scanner = new Scanner(new File(filename));
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -68,6 +68,7 @@ public class ExMain {
         //迷路＋プレイヤー現在位置を表示。
         //プレイヤーインスタンスを右に移動しようとしてその場に留まる。（壁で移動できない）
         //迷路＋プレイヤー現在位置を表示。（前回と同じ場所であることを目視確認）
+    */
     }
 
 }
