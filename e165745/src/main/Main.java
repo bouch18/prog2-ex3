@@ -1,8 +1,7 @@
-package main;
+package jp.ac.ie.uryukyu.e165706;
 
-/**
- * Created by e165745 on 2016/11/22.
- */
 public class Main {
+
+
 }
 
