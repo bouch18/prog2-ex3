@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class ExMain {
 
-    public static void main() {
+    public static void main(String[] args) {
 
 
 
@@ -32,15 +32,17 @@ public class ExMain {
             System.exit(1);
         }
         //map.txtの初期位置にプレイヤーインスタンスを生成。
-        String first_place = String.get(0);
+        String first_place = String.get();
         List<int> luke = new ArrayList<>();
         for(int i=0, i<2, i++){
             int k = Integer.parseInt(first_place(i));
-            luke.add(int k);
+            luke.add(k);
         }
         //ply_first_place();
         //迷路＋プレイヤー現在位置を表示。
+        System.out.printf(luke);
         //プレイヤーインスタンスを左に移動。
+
         //迷路＋プレイヤー現在位置を表示。
         //プレイヤーインスタンスを下に移動。
         //迷路＋プレイヤー現在位置を表示。
