@@ -13,8 +13,7 @@ public class ExMain {
 
     public static void main(String[] args) {
 
-
-
+        player();
         //map.txtを読み込んだ迷路インスタンスを生成。
         String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
         List<String> strings = new ArrayList<>();
