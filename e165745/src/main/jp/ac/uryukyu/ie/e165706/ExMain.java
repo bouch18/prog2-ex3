@@ -21,7 +21,7 @@ public class ExMain {
             catch(想定してる例外){例外処理}
             finally{例外の有無にかかわらず、最終的に実行させたい処理}
          */
-        try {
+       /* try {
             scanner = new Scanner(new File(filename));
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -36,7 +36,7 @@ public class ExMain {
         //String first_place = strings.get(1);
         //System.out.println(first_place);
         //map.txtを読み込んだ迷路インスタンスを生成。
-        /*String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
+        String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
         List<String> strings = new ArrayList<>();
         Scanner scanner;
 
@@ -67,7 +67,8 @@ public class ExMain {
         //プレイヤーインスタンスを下に移動。
         //迷路＋プレイヤー現在位置を表示。
         //プレイヤーインスタンスを右に移動しようとしてその場に留まる。（壁で移動できない）
-        //迷路＋プレイヤー現在位置を表示。（前回と同じ場所であることを目視確認）**/
+        //迷路＋プレイヤー現在位置を表示。（前回と同じ場所であることを目視確認）
+    */
     }
 
 }
