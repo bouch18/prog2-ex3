@@ -33,7 +33,7 @@ public class ExMain {
         //map.txtの初期位置にプレイヤーインスタンスを生成。
         String first_place = String.get();
         List<int> luke = new ArrayList<>();
-        for(int i=0, i<2, i++){
+        for(int i=0; i<2; i++){
             int k = Integer.parseInt(first_place(i));
             luke.add(k);
         }

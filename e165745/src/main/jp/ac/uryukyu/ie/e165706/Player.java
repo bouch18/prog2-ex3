@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Player {
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
         String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
         List<String> strings = new ArrayList<>();
@@ -32,15 +32,12 @@ public class Player {
             System.exit(1); //終了ステータス。ここでは取り敢えず0(=正常)以外にした。
         }
         String first_place = strings.get(0);
-        /*List<int> luke = new ArrayList<>();
-        for (
-                int i = 0, i<2, i++)
-
-        {
-            int k = Integer.parseInt(first_place(i));
-            luke.add( int k);
-        }*/
+        List<Integer> luke = new ArrayList<>();
+        for (int i = 0; i<2; i++) {
+            int k = Integer.parseInt(first_place);
+            luke.add(k);
+        }
         System.out.println(first_place);
-    }
+    }//
 }
 
