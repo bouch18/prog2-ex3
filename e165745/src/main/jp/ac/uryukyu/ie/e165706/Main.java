@@ -7,6 +7,7 @@ public class Main {
         Maze maze = new Maze();
         Player player = new Player(maze.getStartPlace(), maze.getMapSize(), maze.getmap());
 
+        System.out.println("きゅあっぷらぱぱ！");
         System.out.println(maze.getmap().get(3).substring(0,1));
         System.out.println(player.getPlayer_x());
 

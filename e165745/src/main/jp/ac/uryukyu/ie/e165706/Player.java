@@ -53,9 +53,9 @@ class Player {
 
 
         String player_point(int player_x, int player_y, List<String> rise){
-            String loid = take.get(player_x);
-            String kuke = loid.substring(player_x, player_x + 1);
-            return kuke;
+            String loid = take.get(player_y);
+            String far = loid.substring(player_x, player_x + 1);
+            return far;
         }
         int getPlayer_x(){
             return player_x;
