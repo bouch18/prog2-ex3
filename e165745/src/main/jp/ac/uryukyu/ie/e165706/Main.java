@@ -18,8 +18,7 @@ public class Main {
                 Player.under_go();
             }
             else{//ahter than that
-                player.left_go();
-            }
+            player.left_go();
         }
     }
 }
