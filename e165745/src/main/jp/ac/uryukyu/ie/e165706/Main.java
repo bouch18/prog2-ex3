@@ -8,7 +8,7 @@ public class Main {
         System.out.println(maze.getmap().get(3).substring(0, 1));
         System.out.println("プレイヤーの初期位置: " + player.getPlayer_x() + "," + player.getPlayer_y());
         while (Player.player_point() == ture) {
-            if ( =="#"){//left is fall
+            if ( =="#"){//left is fall.
                 if ( =="#"){//under is fall
                     Player.right_go();
                 }
