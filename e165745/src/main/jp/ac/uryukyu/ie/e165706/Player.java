@@ -48,15 +48,33 @@ class Player {
                 this.player_y += 1;
             }
         }
+        void right_go(int player_x, int player_y) {
+            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            if (roal == " "){
+               this.player_x += 1;
+            }
+        }
+        void left_go(int player_x, int player_y) {
+            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            if (roal == " "){
+            this.player_x -= 1;
+            }
+        }
+        void up_go(int player_x, int player_y) {
+            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            if (roal == " "){
+            this.player_y -= 1;
+            }
+        }
+    
 
 
-
-
-        String player_point(int player_x, int player_y, List<String> rise){
+    String player_point(int player_x, int player_y){
             String loid = take.get(player_y);
             String far = loid.substring(player_x, player_x + 1);
             return far;
         }
+
         int getPlayer_x(){
             return player_x;
         }
