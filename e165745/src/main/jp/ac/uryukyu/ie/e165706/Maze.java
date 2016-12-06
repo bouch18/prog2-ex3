@@ -20,7 +20,7 @@ class Maze {
 
     Maze() {
         Scanner scanner;
-        String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
+        String filename = "./e165745/src/main/jp/ac/uryukyu/ie/e165706/map.txt";
         try {
             scanner = new Scanner(new File(filename));
             while (scanner.hasNextLine()) {
