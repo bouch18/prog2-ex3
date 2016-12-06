@@ -1,43 +1,70 @@
 package jp.ac.uryukyu.ie.e165706;
 
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class Player {
 
-    public static void main(String[] args) {
 
-        String filename = "./src/main/jp/ac/uryukyu/ie/e165706/map.txt";
-        List<String> strings = new ArrayList<>();
-        Scanner scanner;
 
-        /* 想定している例外が起きる箇所では、予め例外に対応した処理を記述する。
-            try{ 例外が起きる箇所 }
-            catch(想定してる例外){例外処理}
-            finally{例外の有無にかかわらず、最終的に実行させたい処理}
-         */
-        try {
-            scanner = new Scanner(new File(filename));
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                strings.add(line);
+class Player {
+
+        private int player_x;
+        private int player_y;
+        private int map_x;
+        private int map_y;
+        private List<String> take;
+
+        Player(String like, String h, List<String> rise){
+
+            this.take = rise;
+            String[] p = like.split("\\s+",0);
+            for(int i = 0; i<2; i++){
+                if (i == 0){
+                    String q = p[i];
+                    this.player_x = Integer.parseInt(q);
+                }
+                if (i ==1){
+                    String w = p[i];
+                    this.player_y = Integer.parseInt(w);
+                }
             }
-            scanner.close();
-        } catch (FileNotFoundException e) {
-            System.err.println(e.getMessage());
-            System.exit(1); //終了ステータス。ここでは取り敢えず0(=正常)以外にした。
+
+            String[] me = h.split("\\s+",0);
+            for (int j = 0; j<2; j++){
+                if (j == 0){
+                    String e  =me[j];
+                    this.map_x = Integer.parseInt(e);
+                }
+                if(j == 1){
+                    String qu = me[j];
+                    this.map_y = Integer.parseInt(qu);
+                }
+            }
+
         }
-        String first_place = strings.get(0);
-        List<Integer> luke = new ArrayList<>();
-        for (int i = 0; i<2; i++) {
-            int k = Integer.parseInt(first_place);
-            luke.add(k);
+        void under_go(int player_x, int player_y) {
+            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            if (roal == " "){
+                this.player_y += 1;
+            }
         }
-        System.out.println(first_place);
-    }//
-}
+
+
+
+
+        String player_point(int player_x, int player_y, List<String> rise){
+            String loid = take.get(player_x);
+            String kuke = loid.substring(player_x, player_x + 1);
+            return kuke;
+        }
+        int getPlayer_x(){
+            return player_x;
+        }
+        int getPlayer_y() { return player_y; }
+        int getMap_x() {return map_x;}
+        int getMap_y() {return map_y;}
+
+
+
+    }
 

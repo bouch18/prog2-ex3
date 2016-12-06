@@ -6,6 +6,7 @@ public class Main {
 
         Maze maze = new Maze();
         Player player = new Player();
+        System.out.println(maze.)
     }
 
 }
