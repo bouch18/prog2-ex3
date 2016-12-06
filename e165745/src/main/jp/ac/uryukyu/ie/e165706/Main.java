@@ -10,10 +10,10 @@ public class Main {
         while ( !=G)
         if ( =="#"){//left is fall
             if ( =="#"){//under is fall
-                Player.right_go();
+                player.right_go();
                 if (=="#"){//right is fall
-                    Player.up_go();
-                    Player.under_go();
+                    player.up_go();
+                    player.under_go();
                 }
             else{//ahter than that
                     player.left_go();
