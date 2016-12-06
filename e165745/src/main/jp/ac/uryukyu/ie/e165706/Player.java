@@ -45,28 +45,28 @@ class Player {
         }
         void under_go() { //引数にはプレイヤーの現在地をとり、
             String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
-            if (roal == " "){
+            if (" ".equals(roal)){
                 this.player_y += 1;
                 this.walk_count += 1;
             }
         }
         void right_go() {
             String roal = take.get(player_y).substring(player_x +1, player_x + 2);
-            if (roal == " "){
+            if (" ".equals(roal)){
                this.player_x += 1;
                 this.walk_count += 1;
             }
         }
         void left_go() {
             String roal = take.get(player_y).substring(player_x - 1, player_x);
-            if (roal == " "){
+            if (" ".equals(roal)){
                 this.player_x -= 1;
                 this.walk_count += 1;
             }
         }
         void up_go() {
             String roal = take.get(player_y - 1).substring(player_x, player_x + 1);
-            if (roal == " "){
+            if (" ".equals(roal)){
                 this.player_y -= 1;
                 this.walk_count += 1;
             }
@@ -75,11 +75,12 @@ class Player {
     Boolean player_point() {
         String loid = take.get(player_y);
         String far = loid.substring(player_x, player_x + 1);
-        if (far == "G") {
+        return "G".equals(far);
+        /*if("G".equals(far)) {
             return true;
         } else {
             return false;
-        }
+        }*/
     }
         int getPlayer_x(){
             return player_x;
