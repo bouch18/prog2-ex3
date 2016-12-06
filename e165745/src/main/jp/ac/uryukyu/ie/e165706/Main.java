@@ -18,7 +18,6 @@ public class Main {
             else{//ahter than that
                     player.left_go();
                 }
-
             }
         }
     }
