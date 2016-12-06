@@ -11,14 +11,14 @@ public class Main {
         if ( =="#"){//left is fall
             if ( =="#"){//under is fall
                 Player.right_go();
-                if (=="#"){//right is fall
-                    Player.up_go();
-                    Player.under_go();
-                }
-            else{//ahter than that
-                    player.left_go();
-                }
             }
+            if (=="#"){//right is fall
+                Player.up_go();
+            }
+            Player.under_go();
+        }
+            else{//ahter than that
+            player.left_go();
         }
     }
 }
