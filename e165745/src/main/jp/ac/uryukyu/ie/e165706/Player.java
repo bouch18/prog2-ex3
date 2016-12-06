@@ -8,13 +8,13 @@ import java.util.List;
 
 class Player {
 
-        private int player_x;
-        private int player_y;
-        private int map_x;
-        private int map_y;
-        private List<String> take;
+        private int player_x;      //プレイヤーのx座標の値
+        private int player_y;      //プレイヤーのy座標の値
+        private int map_x;    //mapの最大値のx座標
+        private int map_y;    //mapの最大値のy座標
+        private List<String> take;   //Mazeで作ったマップをこの変数に入れる
 
-        Player(String like, String h, List<String> rise){
+        Player(String like, String h, List<String> rise){  //ここでは、上のフィールド変数に適切な値を代入する。
 
             this.take = rise;
             String[] p = like.split("\\s+",0);
@@ -42,32 +42,30 @@ class Player {
             }
 
         }
-        void under_go(int player_x, int player_y) {
+        void under_go(int player_x, int player_y) { //引数にはプレイヤーの現在地をとり、
             String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
             if (roal == " "){
                 this.player_y += 1;
             }
         }
         void right_go(int player_x, int player_y) {
-            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            String roal = take.get(player_y).substring(player_x +1, player_x + 2);
             if (roal == " "){
                this.player_x += 1;
             }
         }
         void left_go(int player_x, int player_y) {
-            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            String roal = take.get(player_y).substring(player_x - 1, player_x);
             if (roal == " "){
             this.player_x -= 1;
             }
         }
         void up_go(int player_x, int player_y) {
-            String roal = take.get(player_y + 1).substring(player_x, player_x + 1);
+            String roal = take.get(player_y - 1).substring(player_x, player_x + 1);
             if (roal == " "){
             this.player_y -= 1;
             }
         }
-    
-
 
     String player_point(int player_x, int player_y){
             String loid = take.get(player_y);
