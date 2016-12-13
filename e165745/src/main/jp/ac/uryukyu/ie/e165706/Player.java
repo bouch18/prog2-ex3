@@ -93,6 +93,27 @@ class Player {
             return false;
         }*/
     }
+    Boolean judge_leftside (){
+        String loid = take.get(player_y);
+        String far =loid.substring(player_x + 2, player_x + 3);
+        return "#".equals(far);
+    }
+    Boolean judge_undertside (){
+        String loid = take.get(player_y +1);
+        String far =loid.substring(player_x + 1, player_x + 2);
+        return "#".equals(far);
+    }
+    Boolean judge_rightside (){
+        String loid = take.get(player_y);
+        String far =loid.substring(player_x , player_x + 1);
+        return "#".equals(far);
+    }
+    Boolean judge_upside (){
+        String loid = take.get(player_y -1);
+        String far =loid.substring(player_x + 1, player_x + 2);
+        return "#".equals(far);
+    }
+
     int getPlayer_x(){
         return player_x;
     }
