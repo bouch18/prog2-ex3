@@ -1,6 +1,5 @@
 package jp.ac.uryukyu.ie.e165706;
 
-
 import java.util.List;
 
 class Player {
@@ -12,7 +11,7 @@ class Player {
     private int walk_count = 0;
 
     Player(String like, String h, List<String> rise){  //ここでは、上のフィールド変数に適切な値を代入する。
-
+        
         this.take = rise;
         String[] p = like.split("\\s+",0);
         for(int i = 0; i<2; i++){
