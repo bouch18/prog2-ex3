@@ -1,9 +1,6 @@
 package jp.ac.uryukyu.ie.e165706;
 
-/*
- * Created by e165745 on 2016/12/04.いえーい、ピースピース
- *
- */
+
 import java.util.List;
 
 class Player {
